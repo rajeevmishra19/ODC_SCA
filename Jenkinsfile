@@ -7,7 +7,7 @@ agent any
       {
       steps 
       	 { 
-        dependencyCheck additionalArguments: '', odcInstallation: 'ODC_Check'
+        dependencyCheck additionalArguments: '', odcInstallation: 'ODC'
         dependencyCheckPublisher pattern: 'dependency-check-report.xml' 
         sh 'mv dependency-check-report.xml /var/jenkins_home/workspace/ODC_SCA/reports' 
         }
