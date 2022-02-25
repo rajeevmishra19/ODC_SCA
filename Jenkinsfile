@@ -8,8 +8,8 @@ agent any
       steps 
       	 { 
         dependencyCheck additionalArguments: '', odcInstallation: 'ODC'
-        dependencyCheckPublisher pattern: 'dependency-check-report.xml' 
-        sh 'mv dependency-check-report.xml /var/jenkins_home/workspace/ODC_SCA/reports' 
+        dependencyCheckPublisher pattern: 'dependency-check-report.html' 
+        sh 'mv dependency-check-report.html /var/jenkins_home/workspace/ODC_SCA/reports' 
         }
       }
     }
